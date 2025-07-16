@@ -15,6 +15,5 @@ export default async function getDetail(params: props) {
       },
     }
   );
-  console.log(data.data);
   return data.data;
 }
