@@ -1,10 +1,8 @@
 import axios from "axios";
-
 interface props {
   movieId: number;
 }
-
-export default async function getDetail(params: props) {
+async function getDetail(params: props) {
   const { movieId } = params;
   const data = await axios.get(
     `https://api.themoviedb.org/3/movie/${movieId}`,
@@ -17,3 +15,5 @@ export default async function getDetail(params: props) {
   );
   return data.data;
 }
+
+export default getDetail;
