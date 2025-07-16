@@ -1,0 +1,16 @@
+export const languageToCountry: Record<string, string> = {
+  en: "us",
+  es: "es",
+  fr: "fr",
+  it: "it",
+  de: "de",
+  ja: "jp",
+  zh: "cn",
+  ru: "rus",
+  ko: "kr",
+  cs: "cz",
+  ta:"in",
+  el: "gr",
+  la: "la",
+  vi: "vn",
+};
