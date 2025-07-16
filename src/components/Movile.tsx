@@ -3,7 +3,7 @@ import { ArrowBigRight, ArrowLeftToLineIcon, MenuIcon } from "lucide-react";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { GenreType } from "@/types/GenreType";
-import getGenre from "@/app/api/movies/genre/route";
+import getGenre from "@/app/api/movies/genre/getGenre";
 
 function Movile() {
   const [drawer, setDrawer] = useState(false);

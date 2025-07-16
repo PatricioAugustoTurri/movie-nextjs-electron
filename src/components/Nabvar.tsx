@@ -9,7 +9,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "./ui/navigation-menu";
-import getGenre from "@/app/api/movies/genre/route";
+import getGenre from "@/app/api/movies/genre/getGenre";
 import { useEffect, useState } from "react";
 import { GenreType } from "@/types/GenreType";
 

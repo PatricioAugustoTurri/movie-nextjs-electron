@@ -1,9 +1,9 @@
 "use client";
 import { MovieDetailType } from "@/types/MovieDetailType";
 import { useEffect, useState } from "react";
-import getMoviePopular from "./api/movies/popular/route";
+import getMoviePopular from "./api/movies/popular/getMoviePopular";
 import CarouselHome from "@/components/CarouselHome";
-import getTrending from "./api/movies/trendink/route";
+import getTrending from "./api/movies/trendink/getTrending";
 import TrendingHome from "@/components/TrendingHome";
 function HomePage() {
   const [movies, setMovies] = useState<MovieDetailType[]>([]);

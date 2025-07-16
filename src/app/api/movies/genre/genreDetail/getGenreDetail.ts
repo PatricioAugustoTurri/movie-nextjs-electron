@@ -4,7 +4,7 @@ interface props {
   page?: number;
 }
 
-async function getGenre({ genreId, page = 1 }: props) {
+async function getGenreDetail({ genreId, page = 1 }: props) {
   const res = await axios.get(
     `https://api.themoviedb.org/3/discover/movie?with_genres=${genreId}&page=${page}`,
     {
@@ -17,4 +17,4 @@ async function getGenre({ genreId, page = 1 }: props) {
   return res.data;
 }
 
-export default getGenre;
+export default getGenreDetail;

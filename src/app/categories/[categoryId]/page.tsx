@@ -1,7 +1,7 @@
 "use client";
 /* eslint-disable @next/next/no-img-element */
 
-import getGenre from "@/app/api/movies/genre/genreDetail/route";
+import getGenreDetail from "@/app/api/movies/genre/genreDetail/getGenreDetail";
 import {
   Pagination,
   PaginationContent,
@@ -36,7 +36,7 @@ function CategoriesPage() {
 
     const fetchData = async () => {
       try {
-        const res = await getGenre({ genreId, page: currentPage });
+        const res = await getGenreDetail({ genreId, page: currentPage });
         setData(res.results);
         setTotalPages(res.total_pages);
       } catch (error) {
