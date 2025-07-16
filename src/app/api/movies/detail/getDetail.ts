@@ -15,5 +15,4 @@ async function getDetail(params: props) {
   );
   return data.data;
 }
-
 export default getDetail;

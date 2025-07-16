@@ -2,7 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 "use client";
-import getDetail from "@/app/api/movies/detail/route";
+import getDetail from "@/app/api/movies/detail/getDetail";
 import { languageToCountry } from "@/lib/Flags";
 import { MovieDetailType } from "@/types/MovieDetailType";
 import { Fascinate_Inline } from "next/font/google";
